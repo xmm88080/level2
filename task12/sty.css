@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tb {
+width: 400px;
+margin: auto; 
+ 
+    font-size: 25px;
+}
+
+.tb th{
+    color: #ffffff;
+    background-color: black;
+}
+
+.tb table tr:nth-of-type(even){
+    background-color: #ffffff;
+    color: red;
+}
+
+.tb table tr:nth-of-type(odd){
+   
+    color: black;
+    background-color: #c9cdcc;
+}
+
+.tb table tr:nth-of-type(-n+4){
+    color: red;
+}
+.serch{
+    width: 100%;
+    text-align: center;
+}
+.serch input{
+    margin: 20px ;
+    margin-left: -100px;
+    width: 200px;
+    height: 30px;
+    transition: width .5s,border .5s
+}
+
+.serch input:focus{
+    width: 300px;
+    border:  5px solid #7aaff0;
+    filter: blur(1px);
+
+}
+
+.banner{
+    position: relative;
+    width: 400px;
+    height: 100px;
+   overflow: hidden;
+    margin: 20px auto;
+}
+
+.im{
+   
+    width: 800px;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.im img{
+  
+   float: left;
+    width: 400px;
+    height: 100%;
+}
+
+#pic1:checked~.im{
+   
+   transform: translateX(0);
+   
+   
+}
+
+#pic2:checked~.im{
+    
+    transform: translateX(-25%);
+ 
+}
+
+#pic3:checked~.im{
+    transform: translateX(-50%);
+}
+
+.banner input{
+   display: none;
+}
+
+.lv {
+    
+   
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 310px;
+    top: 70px;
+   
+    
+}
+
+.lv label{
+    cursor: pointer;
+
+    text-align: center;
+    display: inline-block;
+    margin-left: -3px;
+  width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: pink;
+}

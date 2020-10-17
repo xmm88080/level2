@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width: 641px) {
+            div{
+           
+            justify-content: space-between;
+             height: 500px;
+              align-items: center;
+               }
+        }
+        @media screen and (max-width: 640px) {
+           div{
+               flex-wrap: wrap;
+
+              justify-content: space-between;
+              align-content: flex-start;
+            } 
+            .last{
+                order: -1;
+                margin-bottom: 20px;
+            }
+
+        }
+        div{
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+            
+            border: 1px solid black;
+        }
+        span{
+            padding: 20px;
+            width: 150px;
+            border: 4px solid #f00;
+        }
+        .last{
+            height: 200px;
+            border: 4px solid #0505ff;
+        }
+
+        .s1{
+            height: 120px;
+        }
+
+        .s2{
+            height: 100px;
+        }
+
+        .s3{
+            height: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <span class="s1"></span>
+        <span class="s2"></span>
+        <span class="s3"></span>
+        <span class="last"></span>
+    </div>
+</body>
+</html>
